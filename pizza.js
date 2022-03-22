@@ -32,3 +32,22 @@ $(document).ready(function(){
         let pizzaSize = $("#size option:selected").val();
         let pizzaCrust = $("#crusts option:selected").val();
         let pizzaTopping = $("#toppings option:selected").val();
+
+        let sizeSummary = "";
+        let crustSummary = "";
+        let toppingSummarry = "";
+
+        let sizeTotal = 0;
+        let crustTotal = 0;
+        let toppingTotal = 0;
+
+        let sizes = [small, medium, large];
+        let crusts = [stuffed, crispy, glutten];
+        let toppings = [pepporoni, mushroom, bacon];
+
+        for (let i = 0; i < sizes.length; i++){
+            if (pizzaSize === sizes[i].size){
+                sizeTotal += sizes[i].price;
+                sizeSummary = sizes[i].price;
+            }
+        }
