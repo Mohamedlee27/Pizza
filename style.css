@@ -4,5 +4,40 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
-    background-color: #E5E5E5;
+}
+h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text{
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    color: white;
+}
+.output{
+    width: 250px;
+    padding: 10px;
+    margin-top: 600px;
+    margin-left: 0;
+}
+
+.pizza-image{
+    background-image: none;
 }
